@@ -6,7 +6,11 @@ import { data } from "../data/data"
 function Home() {
   return (
     <>
-      <Banner image={cliff} title={"Cliff"} />
+      <Banner
+        image={cliff}
+        title={"Cliff"}
+        content={"Chez vous, partout et ailleurs"}
+      />
       <section className="card-container">
         {data.map(({ id, title, cover, location }, index) => (
           <Card

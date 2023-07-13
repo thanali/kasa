@@ -1,0 +1,24 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  color: $color-primary;
+  margin: 1rem auto 5rem;
+
+  .error-title {
+    font-weight: 700;
+    font-size: 15rem;
+  }
+
+  .error-content {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+  }
+
+  .error-link {
+    text-decoration: underline;
+    color: $color-primary;
+  }
+}
