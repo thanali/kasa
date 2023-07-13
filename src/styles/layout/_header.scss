@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+
+  .logo {
+    height: 3.2rem;
+  }
+
+  .navbar {
+    display: flex;
+    gap: 2rem;
+  }
+
+  a {
+    color: $color-primary;
+
+    &.is-active {
+      text-decoration: underline;
+    }
+  }
+}
