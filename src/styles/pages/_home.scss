@@ -1,0 +1,11 @@
+.card-container {
+  display: grid;
+  padding: 2rem;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  border-radius: $radius;
+  background-color: $background-color;
+  margin-bottom: 2rem;
+}

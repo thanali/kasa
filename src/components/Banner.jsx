@@ -2,7 +2,7 @@ function Banner({ image, title }) {
   return (
     <div className="banner">
       <img className="banner-img" src={image} alt={title} />
-      <p className="banner-text">Chez vous, partout et ailleurs</p>
+      <h1 className="banner-text">Chez vous, partout et ailleurs</h1>
     </div>
   )
 }
