@@ -1,0 +1,22 @@
+.banner {
+  position: relative;
+  margin-bottom: 2rem;
+
+  .banner-img {
+    object-fit: cover;
+    border-radius: $radius;
+    height: 12.5rem;
+    width: 100%;
+    filter: brightness(70%);
+  }
+
+  .banner-text {
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
