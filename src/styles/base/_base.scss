@@ -8,15 +8,17 @@
   font-size: 18px;
   font-weight: 500;
 }
+
 header,
 main {
   margin: 0 7vw;
 }
+
 a {
   text-decoration: none;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+button {
+  border: none;
+  background: transparent;
 }

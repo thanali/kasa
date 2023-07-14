@@ -12,7 +12,7 @@ import Accomodation from "../pages/Accomodation"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="" element={<Layout />} errorElement={<ErrorPage />}>
+    <Route path="/" element={<Layout />} errorElement={<ErrorPage />}>
       <Route errorElement={<ErrorPage />}>
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
