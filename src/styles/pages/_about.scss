@@ -1,7 +1,13 @@
 .dropdown-container {
   width: 85%;
-  margin: 0 auto 2rem;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  @include mobil {
+    width: initial;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
 }

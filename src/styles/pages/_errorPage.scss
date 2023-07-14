@@ -4,23 +4,38 @@
   align-items: center;
   gap: 5rem;
   color: $color-primary;
-  margin: 1rem auto 5rem;
+  margin: 1rem auto 6rem;
 
   .error-title {
     font-weight: 700;
     font-size: 15rem;
     cursor: default;
+
+    @include mobil {
+      font-size: 5.3rem;
+      margin-top: 4rem;
+    }
   }
 
   .error-content {
     font-size: 1.5rem;
     font-weight: 500;
     padding-bottom: 2rem;
+    text-align: center;
     cursor: default;
+
+    @include mobil {
+      font-size: 1rem;
+      width: 85%;
+    }
   }
 
   .error-link {
     text-decoration: underline;
     color: $color-primary;
+
+    @include mobil {
+      font-size: 0.8rem;
+    }
   }
 }

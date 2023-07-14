@@ -4,18 +4,35 @@ header {
   justify-content: space-between;
   padding: 2.5rem 0;
 
-  .logo {
-    height: 3.2rem;
+  @include mobil {
+    padding: 1.2rem 0 1.5rem;
+  }
+
+  .header-logo {
+    height: 3.5rem;
+
+    @include mobil {
+      height: 2.5rem;
+    }
   }
 
   .navbar {
     display: flex;
     gap: 2rem;
+
+    @include mobil {
+      gap: 1rem;
+    }
   }
 
   a {
     color: $color-primary;
     font-size: 1.3rem;
+
+    @include mobil {
+      font-size: $mobil-title-font-size;
+      text-transform: uppercase;
+    }
 
     &.is-active {
       text-decoration: underline;

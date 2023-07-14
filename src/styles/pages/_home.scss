@@ -6,6 +6,15 @@
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   border-radius: $radius;
-  background-color: $background-color;
-  margin-bottom: 2rem;
+  background: $background-color;
+  margin: 2rem 0;
+
+  @include mobil {
+    display: flex;
+    flex-direction: column;
+    background: initial;
+    padding: initial;
+    gap: 1.2rem;
+    margin: 1rem 0 1.5rem;
+  }
 }

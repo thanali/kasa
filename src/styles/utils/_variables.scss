@@ -1,0 +1,14 @@
+$color-primary: #ff6060;
+$background-color: #f6f6f6;
+
+$mobil-title-font-size: 0.7rem; // 12px
+$mobil-content-font-size: 0.6rem; // 10px
+
+$radius: 25px;
+$radius-mobil: 10px;
+
+$breakpoints: (
+  mobil: 375px,
+  tablet: 745px,
+  desktop: 992px
+);

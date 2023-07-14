@@ -13,18 +13,32 @@
     position: relative;
     z-index: 1;
 
+    @include mobil {
+      padding: 0.4rem 0.5rem;
+    }
+
     &-title {
       color: #fff;
       font-weight: 500;
       font-size: 1.1rem;
+
+      @include mobil {
+        font-size: $mobil-title-font-size * 1.1;
+      }
+    }
+
+    @include mobil {
+      &-button {
+        img {
+          width: 0.9rem;
+          display: flex;
+        }
+      }
     }
   }
 }
 
 .show-dropdown {
-  color: $color-primary;
-  font-weight: 300;
-  line-height: 1.5;
   background-color: $background-color;
   display: block;
   padding: 1rem;
@@ -32,6 +46,22 @@
   border-top: 1rem solid $background-color;
   margin-top: -1rem;
   cursor: default;
+  color: $color-primary;
+  font-weight: 300;
+  line-height: 1.5;
+
+  @include mobil {
+    font-size: $mobil-title-font-size;
+    padding: 0.6rem 1rem;
+  }
+
+  p {
+    font-weight: 300;
+
+    @include mobil {
+      font-size: $mobil-title-font-size;
+    }
+  }
 }
 
 .hide-dropdown {

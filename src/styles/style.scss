@@ -1,14 +1,21 @@
-@import "./variables/variables";
+// Utiles
+@import "./utils/variables";
+@import "./utils/mixins";
 
+// Global
 @import "./base/base";
+
+// Layout
 @import "./layout/header";
 @import "./layout/footer";
 
+// Pages
 @import "./pages/home";
 @import "./pages/about";
 @import "./pages/errorPage";
 @import "./pages//accomodation";
 
+// Composants
 @import "./components/banner";
 @import "./components/card";
 @import "./components/dropdown";

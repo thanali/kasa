@@ -18,7 +18,6 @@ function Accomodation() {
     rating,
     equipments
   } = data
-  console.log(rating)
 
   return (
     <section id={id} className="accomodation">

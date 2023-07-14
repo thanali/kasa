@@ -1,0 +1,16 @@
+// Media queries
+
+@mixin mobil {
+  @media screen and (max-width: map-get($breakpoints, mobil)) {
+    @content;
+  }
+}
+
+// Propriétés communes aux bannières sur la page d'accueil et à propos
+@mixin banners {
+  object-fit: cover;
+  border-radius: $radius;
+  height: 12.5rem;
+  width: 100%;
+  filter: brightness(70%);
+}

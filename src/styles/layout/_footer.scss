@@ -6,6 +6,10 @@ footer {
   gap: 2rem;
   padding: 3.7rem 0 2rem;
 
+  @include mobil {
+    gap: 1rem;
+  }
+
   .footer-logo {
     height: 2.2rem;
     filter: brightness(0) invert(1);
@@ -14,5 +18,11 @@ footer {
   p {
     color: #fff;
     cursor: default;
+
+    @include mobil {
+      font-size: $mobil-title-font-size;
+      width: 30%;
+      text-align: center;
+    }
   }
 }

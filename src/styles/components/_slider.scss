@@ -7,6 +7,11 @@
     width: 100%;
     object-fit: cover;
     border-radius: $radius;
+
+    @include mobil {
+      border-radius: $radius-mobil;
+      height: 14.2rem;
+    }
   }
 
   &-navigation {
@@ -20,6 +25,16 @@
     .button-prev,
     .button-next {
       padding: 1.5rem;
+
+      @include mobil {
+        padding: 0.5rem;
+      }
+
+      img {
+        @include mobil {
+          width: 0.8rem;
+        }
+      }
     }
 
     span {
@@ -29,6 +44,10 @@
       bottom: -5rem;
       left: 50%;
       transform: translate(-50%, 0);
+
+      @include mobil {
+        display: none;
+      }
     }
   }
 }
