@@ -13,11 +13,10 @@ import Accomodation from "../pages/Accomodation"
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />} errorElement={<ErrorPage />}>
-      <Route errorElement={<ErrorPage />}>
-        <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/accomodation/:id" element={<Accomodation />} />
-      </Route>
+      <Route index element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/accomodation/:id" element={<Accomodation />} />
+      <Route path="*" element={<ErrorPage />} />
     </Route>
   )
 )
