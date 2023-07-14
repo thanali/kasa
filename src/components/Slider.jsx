@@ -4,6 +4,7 @@ import arrowRight from "../assets/icons/arrowRight.svg"
 
 function Slider({ imgList, title }) {
   const [currentSlide, setCurrentSlide] = useState(0)
+
   const prevSlide = () => {
     setCurrentSlide(currentSlide === 0 ? imgList.length - 1 : currentSlide - 1)
   }
@@ -14,6 +15,7 @@ function Slider({ imgList, title }) {
   return (
     <div className="slider">
       <img src={imgList[currentSlide]} alt={title} className="slider-img" />
+
       <div className="slider-navigation">
         <button type="button" className="button-prev" onClick={prevSlide}>
           <img src={arrowLeft} alt="Précédente" />
