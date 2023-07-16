@@ -1,9 +1,17 @@
 import Banner from "../components/Banner"
 import cliff from "../assets/images/cliff.png"
 import Card from "../components/Card"
-import datas from "../datas/db"
+import db from "../datas/db"
+import { useLoaderData } from "react-router-dom"
+
+export async function loader() {
+  const datas = await db
+  return { datas }
+}
 
 function Home() {
+  const { datas } = useLoaderData()
+
   return (
     <>
       <Banner

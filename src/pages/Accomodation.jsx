@@ -1,11 +1,17 @@
-import datas from "../datas/db"
+import db from "../datas/db"
 import Slider from "../components/Slider"
-import { useParams } from "react-router-dom"
+import { useLoaderData, useParams } from "react-router-dom"
 import Dropdown from "../components/Dropdown"
 import emptyStar from "../assets/icons/star-empty.svg"
 import fullStar from "../assets/icons/star-active.svg"
 
+export async function loader() {
+  const datas = await db
+  return { datas }
+}
+
 function Accomodation() {
+  const { datas } = useLoaderData()
   // Récupère le paramètre de la Route
   const { id } = useParams()
   // Le compare avec les données
