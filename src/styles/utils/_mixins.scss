@@ -1,5 +1,4 @@
 // Media queries
-
 @mixin mobil {
   @media screen and (max-width: map-get($breakpoints, mobil)) {
     @content;

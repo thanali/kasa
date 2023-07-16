@@ -6,8 +6,11 @@ import emptyStar from "../assets/icons/star-empty.svg"
 import fullStar from "../assets/icons/star-active.svg"
 
 function Accomodation() {
+  // Récupère le paramètre de la Route
   const { id } = useParams()
+  // Le compare avec les données
   const data = datas && datas.find(el => el.id === id)
+  // Récupère les données du paramètre qui correspond
   const {
     title,
     pictures,
@@ -61,7 +64,7 @@ function Accomodation() {
         <Dropdown
           title={"Équipements"}
           content={equipments.map((el, index) => (
-            <p key={`${index}-equipment`}>{el}</p>
+            <li key={`${index}-equipment`}>{el}</li>
           ))}
         />
       </div>

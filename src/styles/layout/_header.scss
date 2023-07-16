@@ -8,12 +8,17 @@ header {
     padding: 1.2rem 0 1.5rem;
   }
 
-  .header-logo {
+  .header-logo,
+  .header-logo-home {
     height: 3.5rem;
 
     @include mobil {
       height: 2.5rem;
     }
+  }
+
+  .header-logo {
+    cursor: pointer;
   }
 
   .navbar {

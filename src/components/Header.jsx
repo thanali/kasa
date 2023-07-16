@@ -1,10 +1,22 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, useLocation, useNavigate } from "react-router-dom"
 import logo from "../assets/logo/logo.png"
 
 function Header() {
+  const navigate = useNavigate()
+  const location = useLocation()
+
   return (
     <header>
-      <img className="header-logo" src={logo} alt="Logo Kasa" />
+      <img
+        className={
+          location.pathname === "/" ? "header-logo-home" : "header-logo"
+        }
+        src={logo}
+        alt="Logo Kasa"
+        onClick={() => {
+          navigate("/")
+        }}
+      />
       <nav className="navbar">
         <NavLink
           to=""

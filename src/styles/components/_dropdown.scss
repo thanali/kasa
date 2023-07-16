@@ -55,7 +55,8 @@
     padding: 0.6rem 1rem;
   }
 
-  p {
+  ul,
+  li {
     font-weight: 300;
 
     @include mobil {

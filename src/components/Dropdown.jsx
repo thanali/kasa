@@ -21,7 +21,7 @@ function Dropdown({ title, content }) {
         </button>
       </div>
       <div className={isOpen ? "show-dropdown" : "hide-dropdown"}>
-        {content}
+        <ul>{content}</ul>
       </div>
     </div>
   )
