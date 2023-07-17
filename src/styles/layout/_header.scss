@@ -56,7 +56,7 @@ header {
     }
 
     @include mobil {
-      font-size: $mobil-title-font-size;
+      font-size: $mobil-title-size;
       text-transform: uppercase;
     }
   }

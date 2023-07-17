@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  transition: 200ms;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(101%);
+  }
 
   &-inner {
     background-color: $color-primary;
@@ -12,55 +18,45 @@
     border-radius: 5px;
     position: relative;
     z-index: 1;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
 
     @include mobil {
       padding: 0.4rem 0.5rem;
-    }
-
-    &-title {
-      color: #fff;
-      font-weight: 500;
-      font-size: 1.1rem;
-
-      @include mobil {
-        font-size: $mobil-title-font-size * 1.1;
-      }
-    }
-
-    @include mobil {
-      &-button {
-        img {
-          width: 0.9rem;
-          display: flex;
-        }
+      font-size: $mobil-title-size * 1.1;
+      img {
+        width: 0.9rem;
+        display: flex;
       }
     }
   }
 }
 
 .show-dropdown {
-  background-color: $background-color;
   display: block;
+  background-color: $background-color;
   padding: 1rem;
   border-radius: 0 0 5px 5px;
-  border-top: 1rem solid $background-color;
-  margin-top: -1rem;
+  margin: -5px 0 auto;
   cursor: default;
-  color: $color-primary;
-  font-weight: 300;
-  line-height: 1.5;
+  transform-origin: top;
+  animation: dropdowns 300ms ease-in-out;
 
   @include mobil {
-    font-size: $mobil-title-font-size;
-    padding: 0.6rem 1rem;
+    font-size: $mobil-title-size;
+    padding: 0.7rem 1rem;
   }
 
   ul,
   li {
+    color: $color-primary;
     font-weight: 300;
+    line-height: 1.5;
+    transform-origin: top;
 
     @include mobil {
-      font-size: $mobil-title-font-size;
+      font-size: $mobil-title-size;
     }
   }
 }

@@ -10,12 +10,9 @@ function Dropdown({ title, content }) {
 
   return (
     <div className="dropdown">
-      <div className="dropdown-inner">
-        <h3 className="dropdown-inner-title">{title}</h3>
-        <button
-          className="dropdown-inner-button"
-          type="button"
-          onClick={toggle}>
+      <div className="dropdown-inner" onClick={toggle}>
+        {title}
+        <button className="dropdown-inner-button" type="button">
           <img
             src={isOpen ? arrowDown : arrowUp}
             alt={isOpen ? "fermer" : "ouvrir"}

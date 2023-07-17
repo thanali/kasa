@@ -20,7 +20,7 @@ footer {
     cursor: default;
 
     @include mobil {
-      font-size: $mobil-title-font-size;
+      font-size: $mobil-title-size;
       width: 30%;
       text-align: center;
     }
