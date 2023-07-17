@@ -6,6 +6,8 @@ import emptyStar from "../assets/icons/star-empty.svg"
 import fullStar from "../assets/icons/star-active.svg"
 
 function Accomodation() {
+  window.scroll(0, 0)
+
   // Récupère le paramètre de la Route
   const { id } = useParams()
   // Le compare avec les données
