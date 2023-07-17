@@ -4,12 +4,14 @@ import Card from "../components/Card"
 import db from "../datas/db"
 import { useLoaderData } from "react-router-dom"
 
+// Mise en situation d'un fetch des données
 export async function loader() {
   const datas = await db
   return { datas }
 }
 
 function Home() {
+  // Renvoie automatiquement une response.json()
   const { datas } = useLoaderData()
 
   return (

@@ -8,11 +8,15 @@ header {
     padding: 1.2rem 0 1.5rem;
   }
 
+  @include small-screen {
+    align-items: initial;
+  }
+
   .header-logo,
   .header-logo-home {
     height: 3.5rem;
 
-    @include mobil {
+    @include tablet {
       height: 2.5rem;
     }
   }
@@ -21,12 +25,25 @@ header {
     cursor: pointer;
   }
 
-  .navbar {
+  .navbar ul {
     display: flex;
     gap: 2rem;
 
     @include mobil {
       gap: 1rem;
+
+      @include small-screen {
+        gap: 0.2rem;
+      }
+    }
+
+    @include small-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 2.5rem 0.3rem 0;
+      overflow: hidden;
+      max-height: 0;
     }
   }
 
@@ -34,13 +51,39 @@ header {
     color: $color-primary;
     font-size: 1.3rem;
 
+    &.is-active {
+      text-decoration: underline;
+    }
+
     @include mobil {
       font-size: $mobil-title-font-size;
       text-transform: uppercase;
     }
+  }
 
-    &.is-active {
-      text-decoration: underline;
+  .navbar-toggle {
+    display: none;
+
+    @include small-screen {
+      display: block;
+      position: absolute;
+      top: 1.5rem;
+      right: 7vw;
+      cursor: pointer;
+    }
+    img {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  #toggle {
+    display: none;
+
+    @include small-screen {
+      &:checked + ul {
+        max-height: 10rem;
+      }
     }
   }
 }

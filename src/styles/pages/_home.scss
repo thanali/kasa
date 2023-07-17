@@ -2,12 +2,19 @@
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  padding: 2rem;
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem;
+  padding: 3rem;
   border-radius: $radius;
   background: $background-color;
   margin: 2rem 0;
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    padding: 2rem;
+  }
 
   @include mobil {
     display: flex;

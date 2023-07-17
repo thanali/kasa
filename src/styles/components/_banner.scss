@@ -4,7 +4,7 @@
   .banner-homepage {
     @include banners;
 
-    @include mobil {
+    @include tablet {
       height: 6rem;
       border-radius: $radius-mobil;
     }
@@ -20,15 +20,17 @@
   }
 
   .banner-text {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     color: #ffffff;
     position: absolute;
+    width: 100%;
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: default;
 
-    @include mobil {
+    @include tablet {
       font-size: 1.2rem;
       width: 85%;
     }

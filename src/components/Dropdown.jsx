@@ -3,8 +3,10 @@ import arrowDown from "../assets/icons/arrowDown.svg"
 import arrowUp from "../assets/icons/arrowUp.svg"
 
 function Dropdown({ title, content }) {
-  const [isOpen, setIsOpen] = useState(false) //dropdown fermé par default
-  const toggle = () => setIsOpen(!isOpen) //fonction anonyme qui renvoit l'inverse du set mis en place et le remplace
+  //dropdown fermé par default
+  const [isOpen, setIsOpen] = useState(false)
+  //fonction anonyme qui renvoit l'inverse du set mis en place et le remplace
+  const toggle = () => setIsOpen(!isOpen)
 
   return (
     <div className="dropdown">
