@@ -1,23 +1,15 @@
 import db from "../datas/db"
 import Slider from "../components/Slider"
-import { useLoaderData, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import Dropdown from "../components/Dropdown"
 import emptyStar from "../assets/icons/star-empty.svg"
 import fullStar from "../assets/icons/star-active.svg"
 
-// Mise en situation d'un fetch des données
-export async function loader() {
-  const datas = await db
-  return { datas }
-}
-
 function Accomodation() {
-  // Renvoie automatiquement une response.json()
-  const { datas } = useLoaderData()
   // Récupère le paramètre de la Route
   const { id } = useParams()
   // Le compare avec les données
-  const data = datas && datas.find(el => el.id === id)
+  const data = db && db.find(el => el.id === id)
   // Récupère les props du paramètre qui correspond
   const {
     title,
