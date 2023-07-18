@@ -16,17 +16,21 @@ function Slider({ imgList, title }) {
     <div className="slider">
       <img src={imgList[currentSlide]} alt={title} className="slider-img" />
 
-      <div className="slider-navigation">
-        <button type="button" className="button-prev" onClick={prevSlide}>
-          <img src={arrowLeft} alt="Précédente" />
-        </button>
-        <span>
-          {currentSlide + 1}/{imgList.length}
-        </span>
-        <button type="button" className="button-next" onClick={nextSlide}>
-          <img src={arrowRight} alt="Suivante" />
-        </button>
-      </div>
+      {imgList.length > 1 ? (
+        <div className="slider-navigation">
+          <button type="button" className="button-prev" onClick={prevSlide}>
+            <img src={arrowLeft} alt="Précédente" />
+          </button>
+          <span>
+            {currentSlide + 1}/{imgList.length}
+          </span>
+          <button type="button" className="button-next" onClick={nextSlide}>
+            <img src={arrowRight} alt="Suivante" />
+          </button>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   )
 }
