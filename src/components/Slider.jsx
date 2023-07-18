@@ -28,9 +28,7 @@ function Slider({ imgList, title }) {
             <img src={arrowRight} alt="Suivante" />
           </button>
         </div>
-      ) : (
-        ""
-      )}
+      ) : null}
     </div>
   )
 }

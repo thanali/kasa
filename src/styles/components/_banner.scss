@@ -1,18 +1,23 @@
 .banner {
   position: relative;
 
-  .banner-homepage {
-    @include banners;
+  .img-banner-homepage,
+  .img-banner {
+    object-fit: cover;
+    border-radius: $radius;
+    height: 12.5rem;
+    width: 100%;
+    filter: brightness(70%);
+  }
 
+  .img-banner-homepage {
     @include tablet {
       height: 6rem;
       border-radius: $radius-mobil;
     }
   }
 
-  .banner-about {
-    @include banners;
-
+  .img-banner {
     @include mobil {
       height: 12.5rem;
       border-radius: $radius-mobil;

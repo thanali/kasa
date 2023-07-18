@@ -2,12 +2,8 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  transition: 200ms;
+  position: relative;
   cursor: pointer;
-
-  &:hover {
-    transform: scale(101%);
-  }
 
   &-inner {
     background-color: $color-primary;
@@ -33,18 +29,16 @@
   }
 }
 
-.show-dropdown {
-  display: block;
+.dropdown-content {
   background-color: $background-color;
   padding: 1rem;
   border-radius: 0 0 5px 5px;
   margin: -5px 0 auto;
   cursor: default;
   transform-origin: top;
-  animation: dropdowns 300ms ease-in-out;
+  animation: goDown 300ms;
 
   @include mobil {
-    font-size: $mobil-title-size;
     padding: 0.7rem 1rem;
   }
 
@@ -53,7 +47,6 @@
     color: $color-primary;
     font-weight: 300;
     line-height: 1.5;
-    transform-origin: top;
 
     @include mobil {
       font-size: $mobil-title-size;
@@ -62,5 +55,16 @@
 }
 
 .hide-dropdown {
-  display: none;
+  transform-origin: top;
+  animation: goUp 300ms forwards;
+}
+
+.arrowDown {
+  transform: rotate(-180deg);
+  transition: transform 400ms;
+}
+
+.arrowUp {
+  transform: rotate(0deg);
+  transition: transform 400ms;
 }

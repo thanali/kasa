@@ -1,10 +1,36 @@
-@keyframes dropdowns {
+// Animations dropdown
+
+@keyframes goDown {
   0% {
     opacity: 0;
+    transform: translateY(-10px);
     transform: scaleY(0);
+  }
+  20% {
+    opacity: 0;
   }
   100% {
     opacity: 1;
     transform: scaleY(1);
+  }
+}
+
+@keyframes goUp {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    position: initial;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+    transform: scaleY(0);
+    position: absolute;
   }
 }

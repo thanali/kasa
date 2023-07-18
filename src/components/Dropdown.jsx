@@ -1,6 +1,5 @@
 import { useState } from "react"
-import arrowDown from "../assets/icons/arrowDown.svg"
-import arrowUp from "../assets/icons/arrowUp.svg"
+import arrow from "../assets/icons/arrowDrop.svg"
 
 function Dropdown({ title, content }) {
   //dropdown fermé par default
@@ -10,16 +9,21 @@ function Dropdown({ title, content }) {
 
   return (
     <div className="dropdown">
-      <div className="dropdown-inner" onClick={toggle}>
+      <div className="dropdown-inner">
         {title}
-        <button className="dropdown-inner-button" type="button">
+        <button
+          className="dropdown-inner-button"
+          type="button"
+          onClick={toggle}>
           <img
-            src={isOpen ? arrowDown : arrowUp}
+            src={arrow}
+            className={!isOpen ? "arrowUp" : "arrowDown"}
             alt={isOpen ? "fermer" : "ouvrir"}
           />
         </button>
       </div>
-      <div className={isOpen ? "show-dropdown" : "hide-dropdown"}>
+
+      <div className={`dropdown-content ${isOpen ? "" : "hide-dropdown"}`}>
         <ul>{content}</ul>
       </div>
     </div>

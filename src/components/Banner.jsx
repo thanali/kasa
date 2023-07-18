@@ -7,7 +7,7 @@ function Banner({ image, title, content }) {
     <div className="banner">
       <img
         className={
-          location.pathname === "/" ? "banner-homepage" : "banner-about"
+          location.pathname === "/" ? "img-banner-homepage" : "img-banner"
         }
         src={image}
         alt={title}
