@@ -1,5 +1,5 @@
 import { NavLink, useLocation, useNavigate } from "react-router-dom"
-import logo from "../assets/logo/logo.png"
+import logo from "../assets/logo/logo.svg"
 import burger from "../assets/icons/burger-menu.svg"
 
 function Header() {

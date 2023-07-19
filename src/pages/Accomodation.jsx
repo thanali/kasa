@@ -24,6 +24,8 @@ function Accomodation() {
     equipments
   } = data
 
+  const nameTag = host.name.split(" ", 2)
+
   return (
     <section id={id} className="accomodation">
       <Slider key={`${title}-${id}`} imgList={pictures} title={title} />
@@ -46,7 +48,11 @@ function Accomodation() {
         <div className="host-rating">
           <div className="host">
             <img src={host.picture} alt={host.name} />
-            <p>{host.name}</p>
+            <div className="host-name">
+              {nameTag.map(el => (
+                <p key={el}>{el}</p>
+              ))}
+            </div>
           </div>
 
           <div className="rating">

@@ -56,6 +56,7 @@
 
   .tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 0.6rem;
     margin-top: 1rem;
 
@@ -118,7 +119,6 @@
     p {
       color: $color-primary;
       font-weight: 500;
-      width: 50%;
       text-align: end;
 
       @include mobil {

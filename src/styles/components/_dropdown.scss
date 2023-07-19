@@ -2,25 +2,32 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  position: relative;
-  cursor: pointer;
+  overflow: hidden;
 
-  &-inner {
+  &-header {
     background-color: $color-primary;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.6rem 0.8rem;
     border-radius: 5px;
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.1rem;
+
+    h3 {
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.1rem;
+
+      @include mobil {
+        font-size: $mobil-title-size * 1.1;
+      }
+    }
+
+    &-button {
+      cursor: pointer;
+    }
 
     @include mobil {
       padding: 0.4rem 0.5rem;
-      font-size: $mobil-title-size * 1.1;
       img {
         width: 0.9rem;
         display: flex;
@@ -31,12 +38,22 @@
 
 .dropdown-content {
   background-color: $background-color;
-  padding: 1rem;
   border-radius: 0 0 5px 5px;
-  margin: -5px 0 auto;
-  cursor: default;
+  position: relative;
+  padding: 0 1rem;
+  top: -0.3rem;
+  overflow: hidden;
+  max-height: 0;
+  z-index: -1;
   transform-origin: top;
-  animation: goDown 300ms;
+  transform: translateY(-100%);
+  transition: 300ms ease-in-out;
+
+  &.visible {
+    transform: translateY(0);
+    padding: 1.3rem 1rem;
+    max-height: 50rem;
+  }
 
   @include mobil {
     padding: 0.7rem 1rem;
@@ -52,11 +69,6 @@
       font-size: $mobil-title-size;
     }
   }
-}
-
-.hide-dropdown {
-  transform-origin: top;
-  animation: goUp 300ms forwards;
 }
 
 .arrowDown {

@@ -9,8 +9,8 @@ function Dropdown({ title, content }) {
 
   return (
     <div className="dropdown">
-      <div className="dropdown-inner">
-        {title}
+      <div className="dropdown-header">
+        <h3>{title}</h3>
         <button
           className="dropdown-inner-button"
           type="button"
@@ -23,7 +23,7 @@ function Dropdown({ title, content }) {
         </button>
       </div>
 
-      <div className={`dropdown-content ${isOpen ? "" : "hide-dropdown"}`}>
+      <div className={`dropdown-content ${isOpen ? "visible" : ""}`}>
         <ul>{content}</ul>
       </div>
     </div>
