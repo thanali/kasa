@@ -11,14 +11,14 @@
   }
 
   .img-banner-homepage {
-    @include tablet {
+    @include device(tablet) {
       height: 6rem;
       border-radius: $radius-mobil;
     }
   }
 
   .img-banner {
-    @include mobil {
+    @include device(mobil) {
       height: 12.5rem;
       border-radius: $radius-mobil;
     }
@@ -35,7 +35,7 @@
     transform: translate(-50%, -50%);
     cursor: default;
 
-    @include tablet {
+    @include device(tablet) {
       font-size: 1.2rem;
       width: 85%;
     }

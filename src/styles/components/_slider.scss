@@ -8,7 +8,7 @@
     object-fit: cover;
     border-radius: $radius;
 
-    @include mobil {
+    @include device(mobil) {
       border-radius: $radius-mobil;
       height: 14.2rem;
     }
@@ -25,13 +25,14 @@
     .button-prev,
     .button-next {
       padding: 1.5rem;
+      cursor: pointer;
 
-      @include mobil {
+      @include device(mobil) {
         padding: 0.5rem;
       }
 
       img {
-        @include mobil {
+        @include device(mobil) {
           width: 0.8rem;
         }
       }
@@ -45,7 +46,7 @@
       left: 50%;
       transform: translate(-50%, 0);
 
-      @include mobil {
+      @include device(mobil) {
         display: none;
       }
     }

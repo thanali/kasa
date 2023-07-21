@@ -5,7 +5,7 @@
   flex-direction: column;
   gap: 1.5rem;
 
-  @include mobil {
+  @include device(mobil) {
     width: initial;
     gap: 1rem;
     margin: 1rem 0;

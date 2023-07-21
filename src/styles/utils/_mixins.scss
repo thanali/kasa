@@ -1,18 +1,20 @@
 // Media queries
-@mixin mobil {
-  @media screen and (max-width: map-get($breakpoints, mobil)) {
-    @content;
+@mixin device($breakpoint) {
+  @if $breakpoint == mobil {
+    @media screen and (max-width: 550px) {
+      @content;
+    }
   }
-}
 
-@mixin tablet {
-  @media screen and (max-width: map-get($breakpoints, tablet)) {
-    @content;
+  @if $breakpoint == tablet {
+    @media screen and (max-width: 1024px) {
+      @content;
+    }
   }
-}
 
-@mixin small-screen {
-  @media screen and (max-width: map-get($breakpoints, small-screen)) {
-    @content;
+  @if $breakpoint == small-screen {
+    @media screen and (max-width: 370px) {
+      @content;
+    }
   }
 }

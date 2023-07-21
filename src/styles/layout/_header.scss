@@ -1,14 +1,16 @@
+// Header Logo
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2.5rem 0;
 
-  @include mobil {
+  @include device(mobil) {
     padding: 1.2rem 0 1.5rem;
   }
 
-  @include small-screen {
+  @include device(small-screen) {
     align-items: initial;
   }
 
@@ -16,7 +18,7 @@ header {
   .header-logo-home {
     height: 3.5rem;
 
-    @include tablet {
+    @include device(tablet) {
       height: 2.5rem;
     }
   }
@@ -24,66 +26,71 @@ header {
   .header-logo {
     cursor: pointer;
   }
+}
 
-  .navbar ul {
+// Navbar
+.navbar,
+.navbar-expanded {
+  @include device(small-screen) {
+    display: none;
+  }
+
+  ul {
     display: flex;
     gap: 2rem;
 
-    @include mobil {
+    @include device(mobil) {
       gap: 1rem;
+    }
 
-      @include small-screen {
-        gap: 0.2rem;
+    a {
+      color: $color-primary;
+      font-size: 1.3rem;
+
+      &.is-active {
+        text-decoration: underline;
+      }
+
+      @include device(mobil) {
+        font-size: $mobil-title-size;
+        text-transform: uppercase;
       }
     }
-
-    @include small-screen {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      padding: 2.5rem 0.3rem 0;
-      overflow: hidden;
-      max-height: 0;
-    }
   }
+}
 
-  a {
-    color: $color-primary;
-    font-size: 1.3rem;
+.toggle {
+  display: none;
 
-    &.is-active {
-      text-decoration: underline;
-    }
+  @include device(small-screen) {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 7vw;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
 
-    @include mobil {
-      font-size: $mobil-title-size;
-      text-transform: uppercase;
-    }
-  }
-
-  .navbar-toggle {
-    display: none;
-
-    @include small-screen {
-      display: block;
-      position: absolute;
-      top: 1.5rem;
-      right: 7vw;
-      cursor: pointer;
-    }
     img {
       height: 2rem;
       width: 2rem;
     }
   }
 
-  #toggle {
-    display: none;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
 
-    @include small-screen {
-      &:checked + ul {
-        max-height: 10rem;
-      }
+@include device(small-screen) {
+  .navbar-expanded {
+    display: flex;
+    padding: 2.5rem 0.3rem 0;
+
+    ul {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.3rem;
     }
   }
 }

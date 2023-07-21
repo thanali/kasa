@@ -11,7 +11,7 @@
     font-size: 15rem;
     cursor: default;
 
-    @include mobil {
+    @include device(mobil) {
       font-size: 5.3rem;
       margin-top: 4rem;
     }
@@ -24,7 +24,7 @@
     text-align: center;
     cursor: default;
 
-    @include mobil {
+    @include device(mobil) {
       font-size: 1rem;
       width: 85%;
     }
@@ -34,7 +34,7 @@
     text-decoration: underline;
     color: $color-primary;
 
-    @include mobil {
+    @include device(mobil) {
       font-size: 0.8rem;
     }
   }

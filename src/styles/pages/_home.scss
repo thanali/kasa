@@ -9,14 +9,14 @@
   background: $background-color;
   margin: 2rem 0;
 
-  @include tablet {
+  @include device(tablet) {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
     padding: 2rem;
   }
 
-  @include mobil {
+  @include device(mobil) {
     display: flex;
     flex-direction: column;
     background: initial;

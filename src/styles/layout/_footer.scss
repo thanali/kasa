@@ -6,7 +6,7 @@ footer {
   gap: 2rem;
   padding: 3.7rem 0 2rem;
 
-  @include mobil {
+  @include device(mobil) {
     gap: 1rem;
   }
 
@@ -19,7 +19,7 @@ footer {
     color: #fff;
     cursor: default;
 
-    @include mobil {
+    @include device(mobil) {
       font-size: $mobil-title-size;
       width: 30%;
       text-align: center;
