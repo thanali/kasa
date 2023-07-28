@@ -3,6 +3,7 @@ import arrowLeft from "../assets/icons/arrowLeft.svg"
 import arrowRight from "../assets/icons/arrowRight.svg"
 
 function Slider({ imgList, title }) {
+  // Récupère l'état de la slide current et set par défaut l'index 0
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const prevSlide = () => {

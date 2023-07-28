@@ -2,9 +2,8 @@ import { useState } from "react"
 import arrow from "../assets/icons/arrowDrop.svg"
 
 function Dropdown({ title, content }) {
-  //dropdown fermé par default
+  // Mise en place de l'état et set l'état de départ à fermé
   const [isOpen, setIsOpen] = useState(false)
-  //fonction anonyme qui renvoit l'inverse du set mis en place et le remplace
   const toggle = () => setIsOpen(!isOpen)
 
   return (

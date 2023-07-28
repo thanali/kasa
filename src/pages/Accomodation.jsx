@@ -6,6 +6,7 @@ import emptyStar from "../assets/icons/star-empty.svg"
 import fullStar from "../assets/icons/star-active.svg"
 
 function Accomodation() {
+  // Renvoie automatique en haut de page au chargement
   window.scroll(0, 0)
 
   // Récupère le paramètre de la Route
@@ -24,11 +25,12 @@ function Accomodation() {
     equipments
   } = data
 
-  const nameTag = host.name.split(" ", 2)
+  // Recherche les espaces, les retire et créé un nouveau tableau d'éléments
+  const nameTag = host.name.split(" ")
 
   return (
-    <section id={id} className="accomodation">
-      <Slider key={`${title}-${id}`} imgList={pictures} title={title} />
+    <section className="accomodation">
+      <Slider imgList={pictures} title={title} />
 
       <div className="accomodation-content">
         <div className="acc-text">

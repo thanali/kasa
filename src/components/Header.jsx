@@ -13,11 +13,13 @@ function Header() {
   return (
     <header>
       <img
+        // Changement de classe en fonction de la page sur laquelle on se trouve
         className={
           location.pathname === "/" ? "header-logo-home" : "header-logo"
         }
         src={logo}
         alt="Logo Kasa"
+        // Renvoie sur la page d'accueil
         onClick={() => {
           navigate("/")
         }}
