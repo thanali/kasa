@@ -86,8 +86,8 @@ function Accomodation() {
       </section>
     )
   } else {
+    return <ErrorPage />
   }
-  return <ErrorPage />
 }
 
 export default Accomodation
