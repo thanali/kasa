@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/kasa/static/css/main.1255fe63.css",
-    "main.js": "/kasa/static/js/main.3632ba9f.js",
-    "static/media/mountains.png": "/kasa/static/media/mountains.6c79766be217203aa351.png",
-    "static/media/cliff.png": "/kasa/static/media/cliff.e76961bbfb39d9c6c040.png",
-    "static/media/logo.svg": "/kasa/static/media/logo.e4c19ab08388715cdafcc1bc5806f288.svg",
-    "static/media/star-active.svg": "/kasa/static/media/star-active.30b8963e66a47777ef47296f505567be.svg",
-    "static/media/star-empty.svg": "/kasa/static/media/star-empty.68fd8a1ead5375bd59bb6ae0b633ffd3.svg",
-    "index.html": "/kasa/index.html",
-    "static/media/burger-menu.svg": "/kasa/static/media/burger-menu.bec5ee0886afc6b4e655eea9cf7dbe1c.svg",
-    "static/media/arrowDrop.svg": "/kasa/static/media/arrowDrop.3c682982a2eb7c406dbaddc55cd45ed1.svg",
-    "static/media/arrowRight.svg": "/kasa/static/media/arrowRight.88153a5d119c2744ffe34dca1ef843df.svg",
-    "static/media/arrowLeft.svg": "/kasa/static/media/arrowLeft.19918a1634b1441a25ae0b50e6b1f85b.svg",
-    "main.1255fe63.css.map": "/kasa/static/css/main.1255fe63.css.map",
-    "main.3632ba9f.js.map": "/kasa/static/js/main.3632ba9f.js.map"
+    "main.css": "/OCP8/static/css/main.1255fe63.css",
+    "main.js": "/OCP8/static/js/main.a9e6ccc6.js",
+    "static/media/mountains.png": "/OCP8/static/media/mountains.6c79766be217203aa351.png",
+    "static/media/cliff.png": "/OCP8/static/media/cliff.e76961bbfb39d9c6c040.png",
+    "static/media/logo.svg": "/OCP8/static/media/logo.e4c19ab08388715cdafcc1bc5806f288.svg",
+    "static/media/star-active.svg": "/OCP8/static/media/star-active.30b8963e66a47777ef47296f505567be.svg",
+    "static/media/star-empty.svg": "/OCP8/static/media/star-empty.68fd8a1ead5375bd59bb6ae0b633ffd3.svg",
+    "index.html": "/OCP8/index.html",
+    "static/media/burger-menu.svg": "/OCP8/static/media/burger-menu.bec5ee0886afc6b4e655eea9cf7dbe1c.svg",
+    "static/media/arrowDrop.svg": "/OCP8/static/media/arrowDrop.3c682982a2eb7c406dbaddc55cd45ed1.svg",
+    "static/media/arrowRight.svg": "/OCP8/static/media/arrowRight.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/arrowLeft.svg": "/OCP8/static/media/arrowLeft.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "main.1255fe63.css.map": "/OCP8/static/css/main.1255fe63.css.map",
+    "main.a9e6ccc6.js.map": "/OCP8/static/js/main.a9e6ccc6.js.map"
   },
   "entrypoints": [
     "static/css/main.1255fe63.css",
-    "static/js/main.3632ba9f.js"
+    "static/js/main.a9e6ccc6.js"
   ]
 }
