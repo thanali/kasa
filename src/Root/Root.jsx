@@ -21,7 +21,7 @@ const router = createBrowserRouter(
       </Route>
     </Route>
   ),
-  { basename: "/kasa" }
+  { basename: "/OCP8" }
 )
 
 export default function Root() {
