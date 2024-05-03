@@ -61,7 +61,7 @@ function Accomodation() {
             </div>
 
             <div className="rating">
-              {[...Array(5)].map((star, index) => (
+              {[...Array(5)].map((_, index) => (
                 <img
                   key={`${index}-star`}
                   src={rating < index + 1 ? emptyStar : fullStar}

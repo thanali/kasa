@@ -23,10 +23,6 @@
       }
     }
 
-    &-button {
-      cursor: pointer;
-    }
-
     @include device(mobil) {
       padding: 0.4rem 0.5rem;
       img {
@@ -34,6 +30,10 @@
         display: flex;
       }
     }
+  }
+
+  &-inner-button {
+    cursor: pointer;
   }
 }
 
