@@ -12,7 +12,7 @@ import Accomodation from "../pages/Accomodation"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
+    <Route path="" element={<Layout />}>
       <Route errorElement={<ErrorPage />}>
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -20,7 +20,8 @@ const router = createBrowserRouter(
         <Route path="*" element={<ErrorPage />} />
       </Route>
     </Route>
-  )
+  ),
+  { basename: "/kasa" }
 )
 
 export default function Root() {
