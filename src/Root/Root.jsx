@@ -20,8 +20,7 @@ const router = createBrowserRouter(
         <Route path="*" element={<ErrorPage />} />
       </Route>
     </Route>
-  ),
-  { basename: "/OCP8" }
+  )
 )
 
 export default function Root() {
