@@ -19,9 +19,9 @@ const router = createBrowserRouter(
         <Route path="/accomodation/:id" element={<Accomodation />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
-    </Route>,
-    { basename: "/kasa" }
-  )
+    </Route>
+  ),
+  { basename: "/kasa" }
 )
 
 export default function Root() {
